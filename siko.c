@@ -5,7 +5,8 @@
 int main() {
 
   int a,b;
-  srand((unsigned int)time(NULL));
+
+ srand((unsigned int)time(NULL));
   a=rand()%6+1;
   b=rand()%6+1;
 
@@ -14,6 +15,10 @@ int main() {
    printf("Die 2: %d\n",b);
 
    printf("Total value: %d\n",a+b);
+
+
+             if((a+b)>7) printf("You won!\n");
+             else printf("You lost!\n");
 
    return 0;
 }
